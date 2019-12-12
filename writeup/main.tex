@@ -38,7 +38,7 @@ Case 2:
      & \underset{||\bm{x}||_2=1}{\text{argmax}} & ||\bm{x}||_4^4  \label{eq:3}
 \end{aligned}
 \end{equation}
-Note that raising them to even powers does not change the solution. Notice for $\ell^1$-norm, the problem is a minimization. But for $\ell^4$-norm, it is a maximization. Miraculously, their solutions converge, and both corresponds to the best approximation to (\ref{eq:1}).  
+Note that raising them to even powers does not change the solution. Notice for $\ell^1$-norm, the problem is a minimization. But for $\ell^4$-norm, it is a maximization. Miraculously, their solutions converge, and both correspond to the best approximation to (\ref{eq:1}).  
 
 \section{Prerequisites}
 For clarification, we say $\bm{x}$ is sparser than $\bm{y}$ if there are more 0 entries in $\bm{x}$ than in $\bm{y}$. 
@@ -109,7 +109,7 @@ One can see that if we set $\bm{x}$ as any vector that is not a canonical vector
         \caption{$\ell^{1}$-norm minimization visualization}
         \label{fig:l1_bound}
     \end{figure}
-    One can visualize the relationship of $\ell^1$-norms by considering different vectors on $S^1$. For example, let's turn to figure \ref{fig:l1_bound}. Assume we are living in $\mathbb{R}^2$. The geometry of $\ell^1$-norm is a diamond. The red arrow is the vector $(1, 0)$, which is one of the solution to our optimization problem. And the green arrow is the vector $(\sqrt{2}, \sqrt{2})$. We can see that both red and green arrow lives in $S^1$, but when we graph out the relative $\ell^1$-norm diamond, we can see that the green diamond is bigger than the red diamond. Moreover, this generalizes to any vector that lives in $S^1$. 
+    One can visualize the relationship of $\ell^1$-norms by considering different vectors on $S^1$. For example, let's turn to figure \ref{fig:l1_bound}. Assume we are living in $\mathbb{R}^2$, then our solution space is $S^{1}$. The geometry of $\ell^1$-norm is a diamond. The red arrow is the vector $(1, 0)$, which is one of the solution to our optimization problem. And the green arrow is the vector $(\sqrt{2}, \sqrt{2})$. We can see that both red and green arrow lives in $S^1$, but when we graph out the relative $\ell^1$-norm diamond, we can see that the green diamond is bigger than the red diamond. Moreover, this generalizes to any vector that lives in $S^1$. 
 
 
 \section{Case 2: $\ell^4$-norm Maximization}
@@ -124,8 +124,8 @@ One can see that if we set $\bm{x}$ as any vector that is not a canonical vector
 			&= (\sum^{n}_{i=1} (x_{i})^2)^{2} \\
 			&= 1
 	\end{align}
-	Although this seem less intuitive, we can observe the properties of the expressions we derived. Here, the $||\bm{x}_{4}||^{4}$
-	is now upper bounded by 1. Moreover, we show equation (\ref{eq:7}) = 1, and $2\sum^{n}_{i<j} x_{i}^{2}x_{j}^{2}$
+	Although this seem less intuitive, we can observe the properties of the expressions we derived. Here, $||\bm{x}_{4}||^{4}$
+	is now upper bounded by 1. Moreover, we show expression (\ref{eq:7}) equals 1, and $2\sum^{n}_{i<j} x_{i}^{2}x_{j}^{2}$
 	is minimum if and only if $\sum^{n}_{i=1} ((x_{i})^{2})^{2}$ is maximum. Since $2\sum^{n}_{i<j} x_{i}^{2}x_{j}^{2}$ is at minimum 
 	if it has 0's, this implies that $||\bm{x}||_4^4$ is maximum when $\bm{x}$ is a canonical vector. 
 	
@@ -143,12 +143,7 @@ One can see that if we set $\bm{x}$ as any vector that is not a canonical vector
     
 \section{Conclusion}
 	What we presented here might seem like very simple concepts. $\ell^{p}$-norm is an operation used all over optimization, 
-	linear algebra, metric differential geometry, etc. It is important to be to see the same topic from all kinds of perspective. 
-	I hope this short write-up reveals something interesting to you, as this is also a reminder to me just in case if I forget about 
-	this in the future lol. 
-
-
-
-
+	linear algebra, metric differential geometry, etc. It is important to be to see the same topic from all kinds of perspective.
+	This is an example of optimization on a manifold instead of on the usual Euclidean space. Hope you found it interesting! 
 
 \end{document}

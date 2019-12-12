@@ -1,1 +1,1 @@
-The writeup is located in the `/latex` folder, named `main.pdf`.
+The writeup is located in the `/writeup` folder, named `main.pdf`.
