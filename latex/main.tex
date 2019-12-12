@@ -12,11 +12,11 @@
 
 \begin{document}
 \title{$\ell^0$-norm, $\ell^1$-norm and $\ell^4$-norm in $S^1$}
-\author{Kwan Ho Ryan Chan\\Department of Electrical Engeineer \& Computer Science\\University of California, Berkeley}
+\author{Kwan Ho Ryan Chan\\Department of Electrical Engineer \& Computer Science\\University of California, Berkeley}
 \maketitle
 
 \section{Source Code}
-	The code used to generate the following plots are uploaded to github. Link: 
+	The code used to generate the following plots are uploaded to Github. Link: \texttt{https://github.com/ryanchankh/L0L1L4NormS1}
 \section{Introduction}
 Suppose we have an optimization problem as follows:
 \begin{equation}
@@ -43,7 +43,6 @@ Note that raising them to even powers does not change the solution. Notice for $
 \section{Prerequisites}
 For clarification, we say $\bm{x}$ is sparser than $\bm{y}$ if there are more 0 entries in $\bm{x}$ than in $\bm{y}$. 
 
-\noindent
 To make the proof make sense, let us first show a simple lemma:
 \begin{lemma}\label{eq:4}
     For any $\bm{x} = (x_1, x_2, \cdots, x_n)$, the following expression is true. 
@@ -101,13 +100,13 @@ If we expand the expression using (\ref{eq:4}), we get:
         &= (\sum^n_{i=1}|x_i|)^2 \\
         &= \sum^n_{i=1} |x_i|^2 + 2 \sum^n_{i=1}|x_i||x_j|
 \end{align*}
-One can see that if we set $\bm{x}$ as any vector that is not a cannonical vector, then $||\bm{x}||_1^2$ will be larger than 1. 
+One can see that if we set $\bm{x}$ as any vector that is not a canonical vector, then $||\bm{x}||_1^2$ will be larger than 1. 
 
 \subsection{Geometric Explanation}
     \begin{figure}[h]
         \centering
         \includegraphics[scale=0.4]{l1norm_bound.png}
-        \caption{$\ell^{1}$-norm minimzation visualization}
+        \caption{$\ell^{1}$-norm minimization visualization}
         \label{fig:l1_bound}
     \end{figure}
     One can visualize the relationship of $\ell^1$-norms by considering different vectors on $S^1$. For example, let's turn to figure \ref{fig:l1_bound}. Assume we are living in $\mathbb{R}^2$. The geometry of $\ell^1$-norm is a diamond. The red arrow is the vector $(1, 0)$, which is one of the solution to our optimization problem. And the green arrow is the vector $(\sqrt{2}, \sqrt{2})$. We can see that both red and green arrow lives in $S^1$, but when we graph out the relative $\ell^1$-norm diamond, we can see that the green diamond is bigger than the red diamond. Moreover, this generalizes to any vector that lives in $S^1$. 
@@ -138,9 +137,9 @@ One can see that if we set $\bm{x}$ as any vector that is not a cannonical vecto
         \caption{$\ell^{4}$-norm maximization visualization}
         \label{fig:l4_bound}
     \end{figure}
-    Similar to our previous visualization for the $\ell^{1}$-norm, the red vector here is the cannonical vector, and the green 
+    Similar to our previous visualization for the $\ell^{1}$-norm, the red vector here is the canonical vector, and the green 
     vector is the diagonal. The shape of $\ell^{4}$-ball is a rounded square. One can see that if we choose a vector that is not 
-    a cannonical vector, like the green vector, the green rounded square is always smaller than the red rounded square. 
+    a canonical vector, like the green vector, the green rounded square is always smaller than the red rounded square. 
     
 \section{Conclusion}
 	What we presented here might seem like very simple concepts. $\ell^{p}$-norm is an operation used all over optimization, 
