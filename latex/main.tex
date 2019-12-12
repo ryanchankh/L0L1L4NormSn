@@ -16,7 +16,7 @@
 \maketitle
 
 \section{Source Code}
-	The code used to generate the following plots are uploaded to Github. Link: \texttt{https://github.com/ryanchankh/L0L1L4NormS1}
+	The code used to generate the following plots are uploaded to Github. Link: \texttt{https://github.com/ryanchankh/L0L1L4NormSn}
 \section{Introduction}
 Suppose we have an optimization problem as follows:
 \begin{equation}
@@ -25,7 +25,7 @@ Suppose we have an optimization problem as follows:
 \end{aligned}
 \end{equation}
 In plain words, we are trying to find the sparsest solution (most 0's entries), such that the solution
-is a point on the sphere $S^1$. This problem is NP-hard. So a natural way to solve this is by relaxing the problem to another form. The goal of this article is to show how the solutions to (\ref{eq:1}) corresponds to solving the following: \\
+is a point on the sphere $S^n$. This problem is NP-hard. So a natural way to solve this is by relaxing the problem to another form. The goal of this article is to show how the solutions to (\ref{eq:1}) corresponds to solving the following: \\
 Case 1:
 \begin{equation}
 \begin{aligned}
@@ -90,7 +90,7 @@ To find the bound for $||\bm{x}||_1$, we expand the terms for $||\bm{x}||_1^2$, 
         &= \sum^n_1 \sqrt{(x_i)^2} \\
         &\geq \sqrt{\sum^n_1 (x_i)^2} & \text{(by (\ref{eq:5}))}\\
         &= ||x||_2 \\
-        &= 1 & \text{(by $S^1$ constraint)}
+        &= 1 & \text{(by $S^n$ constraint)}
 \end{align*}
 Hence, we have shown that 1 is the lower bound for $||\bm{x}||_1$.
 
